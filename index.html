@@ -9,12 +9,12 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link  href="./tailwind.config.js">
 <body>
-    <div class="flex flex-col gap-4 items-center justify-center m-auto h-screen placeholder:ENTRE YOUR NAME " >
+    <div class="flex flex-col gap-4 items-center p-2 justify-center m-auto h-screen placeholder:ENTRE YOUR NAME " >
         <input id="name" type="text" placeholder="ENTER YOUR NAME "  class="border-2 border-red-600 ">
         <button  onclick={inputValue()} class="bg-black text-white px-2 py-2 font-bold cursor-pointer ">submit</button>
 
 
-        <h2 id="nameDisplay"> </h2>
+        <h2 id="nameDisplay">                      </h2>
     </div>
     <script>
         function inputValue () {
