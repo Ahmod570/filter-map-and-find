@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link  href="./tailwind.config.js">
+<body>
+    <div class="flex flex-col gap-4 items-center justify-center m-auto h-screen placeholder:ENTRE YOUR NAME " >
+        <input id="name" type="text" placeholder="ENTER YOUR NAME "  class="border-2 border-red-600 ">
+        <button  onclick={inputValue()} class="bg-black text-white px-2 py-2 font-bold cursor-pointer ">submit</button>
+
+
+        <h2 id="nameDisplay"> </h2>
+    </div>
+    <script>
+        function inputValue () {
+            let saveName =document.getElementById("name")?.value 
+            console.log(saveName);
+            if (!saveName){
+                alert("Input name first")
+            }
+                     document.getElementById("nameDisplay").innerHTML=`<p>${saveName}</p>`;
+
+        }
+    </script>
+</body>
+</html>

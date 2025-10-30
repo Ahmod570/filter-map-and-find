@@ -33,7 +33,7 @@ console.log(barKormu);
 
 // find 
 var arrey = [ 1,2,3,4,5,6,7,8,9,11,10,10];
-// arrey.find((n)=>{console.log(n);})
+arrey.find((n)=>{console.log(n);})
 var tukaitam = 11;
 var dekmu = arrey.find((n)=>n==tukaitam);
 console.log(dekmu);
